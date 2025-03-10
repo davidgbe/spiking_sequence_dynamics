@@ -1,0 +1,5 @@
+/mmfs1/gscratch/labfairhall/davidgbe/spiking_sequence_dynamics
+run_spiking_sims.py:13: DeprecationWarning: Please use `shift` from the `scipy.ndimage` namespace, the `scipy.ndimage.interpolation` namespace is deprecated.
+  from scipy.ndimage.interpolation import shift
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [06:27<10:38:47, 387.15s/it] 20%|██        | 20/100 [06:38<19:04, 14.31s/it]    21%|██        | 21/100 [06:38<17:34, 13.35s/it] 25%|██▌       | 25/100 [06:53<13:19, 10.66s/it] 41%|████      | 41/100 [10:29<12:12, 12.41s/it] 52%|█████▏    | 52/100 [10:48<06:43,  8.42s/it] 83%|████████▎ | 83/100 [10:50<00:57,  3.39s/it] 89%|████████▉ | 89/100 [10:53<00:32,  2.97s/it] 93%|█████████▎| 93/100 [10:54<00:18,  2.64s/it] 96%|█████████▌| 96/100 [10:56<00:09,  2.43s/it] 97%|█████████▋| 97/100 [10:59<00:07,  2.44s/it] 98%|█████████▊| 98/100 [11:01<00:04,  2.39s/it]100%|██████████| 100/100 [11:01<00:00,  6.61s/it]
+  0%|          | 0/100 [00:00<?, ?it/s]
