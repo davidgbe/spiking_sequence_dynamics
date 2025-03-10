@@ -6,7 +6,6 @@ import numpy as np
 from scipy import stats
 from scipy.optimize import fsolve
 import scipy.io as sio
-import pandas as pd
 from tqdm import tqdm
 import pickle
 from collections import OrderedDict
@@ -126,7 +125,6 @@ def speed_test(M, seed, buffer=0.1):
     clamp_input_spks = {}
     
     driving_pulse = np.random.poisson(lam=M.F_IN * dt, size=int(M.SIGMA_IN / dt))
-    print(f'{seed}, {driving_pulse.nonzero()}')
     for i, val in enumerate(driving_pulse):
         if val == 1:
             clamp_input_spks[i * dt] = [0]
