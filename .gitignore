@@ -3,3 +3,4 @@ python-env/*
 __pycache__
 slurm*
 simulation_results*
+.ipynb_checkpoints*
