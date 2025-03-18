@@ -7,9 +7,9 @@
 #SBATCH -A labfairhall
 
 #SBATCH --nodes=1
-#SBATCH --time=08:00:00
+#SBATCH --time=13:00:00
 #SBATCH --ntasks=20
-#SBATCH --mem=40G
+#SBATCH --mem=60G
 
 #SBATCH --chdir=.
 

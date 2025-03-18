@@ -163,11 +163,11 @@ mp.set_start_method('fork', force=True)
 
 if __name__ == '__main__':
 
-    num_trials = 100
+    num_trials = 10
     seeds = np.arange(num_trials) + 3000
 
-    w_ee_vals = np.arange(0.01e-3, 0.081e-3, 0.01e-3)
-    w_ei_vals = np.arange(0.05e-5, 0.2e-5, 0.02e-5)
+    w_ee_vals = np.arange(0, 0.081e-3, 0.003e-3)
+    w_ei_vals = np.arange(0, 0.201e-5, 0.005e-5)
 
     with mp.Pool(mp.cpu_count()) as pool:
         for w_ee in w_ee_vals:
@@ -184,5 +184,5 @@ if __name__ == '__main__':
                 rasters.append(raster_vals)
                 
                 # Append results to file instead of overwriting
-                with open('simulation_results.pkl', 'ab') as f:
+                with open('simulation_results_2.pkl', 'ab') as f:
                     pickle.dump([(w_ee, w_ei, p_stable_vals, raster_vals)], f)
